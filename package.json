@@ -1,0 +1,22 @@
+{
+  "name": "web-crawling-seminar",
+  "private": true,
+  "author": "jinho020@yonsei.ac.kr",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "0.43.5",
+    "@slidev/theme-default": "0.21.2",
+    "@slidev/theme-seriph": "0.21.3"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "1.1.21",
+    "@iconify-json/ph": "1.1.6",
+    "playwright-chromium": "1.38.1"
+  },
+  "packageManager": "yarn@3.6.4"
+}
