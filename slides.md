@@ -88,7 +88,7 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 ---
 
 <div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
-    <h1 style="color: white; margin: auto">2. 데이터를 동적으로 받아올 때</h1>
+    <h1 style="color: white; margin: auto">2. 데이터를 정적으로 받아올 때</h1>
 </div>
 
 ---
