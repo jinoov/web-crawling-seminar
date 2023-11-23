@@ -93,6 +93,70 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 
 ---
 
-# 환경세팅
+# 1. 매일경제 헤드라인 읽어오기
 
-- TODO
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/mk-headline.png" alt="" width="500">
+</div>
+
+---
+
+# 2. 네이버 증권 top 종목들 시세 읽어오기
+
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/naver-finance-top-items.png" alt="" width="400">
+</div>
+
+---
+
+# 요약
+
+<div style="padding: 10px; margin-top: 20px">
+    <div style="display: flex; gap: 15px;">
+        <img src="/images/response-parsing.png" alt="" width="500">
+        <ul>
+            <li>서버에서 내려주는 응답은 단순 텍스트.</li>
+            <li>해당 텍스트에 생기를 넣어준다(parsing).</li>
+            <li>원하는 데이터를 가져온다!</li>
+        </ul>
+    </div>
+</div>
+
+---
+
+<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
+    <h1 style="color: white; margin: auto">3. 데이터를 동적으로 받아올 때</h1>
+</div>
+
+---
+
+# 원리
+
+todo...
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/python-control-chrome.png" alt="" width="500">
+</div>
+
+---
+
+# 1. 매일경제 경제란 더보기 버튼
+
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/mk-more-button.png" alt="" width="500">
+</div>
+
+---
+
+# 2. 네이버지도에서 신촌맛집 검색하기
+
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/sinchon-restaurant.png" alt="" width="500">
+</div>
+
+---
+
+<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
+    <h1 style="color: white; margin: auto">4. Issues in Web Crawling</h1>
+</div>
+
+---
