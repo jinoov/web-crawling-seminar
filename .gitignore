@@ -26,7 +26,8 @@ yarn-error.log
 # artifacts
 slides-export.pdf
 
-# python
+# python sample
 venv
 __pycache__
 *.xlsx
+chromedriver
