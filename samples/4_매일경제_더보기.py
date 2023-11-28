@@ -13,14 +13,14 @@ driver.get(URL)
 # 페이지 로딩 기다리기
 time.sleep(2)
 
-button = driver.find_element(by=By.CSS_SELECTOR, value='#container > section > div.mk_body_news_group > div > div > div.col.main_col > section.news_sec.latest_news_sec > div > div > div > button')
+button = driver.find_element(value='#container > section > div.mk_body_news_group > div > div > div.col.main_col > section.news_sec.latest_news_sec > div > div > div > button', by=By.CSS_SELECTOR)
 
 for i in range(5):
     button.click()
     # 로딩 기다리기 
     time.sleep(1)
 
-list = driver.find_elements(by=By.CSS_SELECTOR, value='#list_area > li')
+list = driver.find_elements(value='#list_area > li', by=By.CSS_SELECTOR)
 
 title_list = []
 body_list = []

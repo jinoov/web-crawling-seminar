@@ -16,7 +16,7 @@ driver.get(URL)
 # 초기 로딩
 time.sleep(2)
 
-input = driver.find_element(by=By.CSS_SELECTOR, value='.input_search') # id사용시 에러 발생
+input = driver.find_element(value='.input_search', by=By.CSS_SELECTOR) # id사용시 에러 발생
 
 input.send_keys(search)
 input.send_keys(Keys.ENTER)
@@ -24,7 +24,7 @@ input.send_keys(Keys.ENTER)
 # 검색 결과 로드
 time.sleep(2)
 
-driver.switch_to.frame(driver.find_element(by=By.CSS_SELECTOR, value='#searchIframe')) # frame 전환
+driver.switch_to.frame(driver.find_element(value='#searchIframe', by=By.CSS_SELECTOR)) # frame 전환
 
 title_arr = []
 
@@ -50,7 +50,7 @@ for _ in range(3):
         title = item.find_element(value='div.CHC5F > a.tzwk0 > div > div > span.TYaxT', by=By.CSS_SELECTOR).text
         title_arr.append(title)
 
-    next_button = driver.find_element(by=By.CSS_SELECTOR, value='#app-root > div > div.XUrfU > div.zRM9F > a:nth-child(7)')
+    next_button = driver.find_element(value='#app-root > div > div.XUrfU > div.zRM9F > a:nth-child(7)', by=By.CSS_SELECTOR)
     next_button.click()
 
     # 다음 페이지 로딩
