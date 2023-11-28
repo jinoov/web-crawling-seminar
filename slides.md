@@ -93,6 +93,21 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 
 ---
 
+# 원리 
+
+<div style="padding: 10px; margin-top: 20px">
+    <div style="display: flex; gap: 15px;">
+        <img src="/images/response-parsing.png" alt="" width="500">
+        <ul>
+            <li>서버에서 내려주는 응답은 단순 텍스트.</li>
+            <li>해당 텍스트에 생기를 넣어준다(parsing).</li>
+            <li>원하는 데이터를 가져온다!</li>
+        </ul>
+    </div>
+</div>
+
+---
+
 # 0. 환경설정
 
 ```shell
@@ -100,6 +115,7 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 python -m venv venv
 
 source ./venv/bin/activate
+# window: ./venv/Scripts/activate
 
 # vscode
 # - 파이썬 관련 익스텐션들 설치
@@ -132,17 +148,6 @@ pip freeze > requirements.txt
 
 # 요약
 
-<div style="padding: 10px; margin-top: 20px">
-    <div style="display: flex; gap: 15px;">
-        <img src="/images/response-parsing.png" alt="" width="500">
-        <ul>
-            <li>서버에서 내려주는 응답은 단순 텍스트.</li>
-            <li>해당 텍스트에 생기를 넣어준다(parsing).</li>
-            <li>원하는 데이터를 가져온다!</li>
-        </ul>
-    </div>
-</div>
-
 ---
 
 <div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
@@ -161,7 +166,9 @@ pip freeze > requirements.txt
 
 # 0. 환경설정
 - 크롬 버전 확인하기
+    - [chrome://settings/help](chrome://settings/help)
 - 크롬 버전에 해당하는 driver 다운로드 받아서 디렉토리(폴더)에 넣어주기
+    - [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
 
 <div style="padding: 10px; margin: 20px 0">
     <img src="/images/driver.png" alt="" width="300">
@@ -184,8 +191,45 @@ pip freeze > requirements.txt
 
 ---
 
+# 요약
+
+---
+
 <div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
     <h1 style="color: white; margin: auto">4. Issues in Web Crawling</h1>
 </div>
 
 ---
+
+# 1. 그냥 데이터 직접 가져오면 안되나요?
+
+---
+
+# 1. 그냥 데이터 직접 가져오면 안되나요?
+
+- User-Agent 정보를 확인하는 경우들은 종종 있다.
+- 로그인해야 가져올 수 있는 정보는 힘들 수 있다.
+
+---
+
+# 2. 이거 합법인가요?
+
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/crawling-legal.png" alt="" width="300">
+</div>
+
+- 이미 오픈된 정보이기에 일반적으로 무죄로 판단.
+- 다만, 상대측 서버에 과도한 부하를 주는 경우 정상영업 방해로 유죄로 판단될 수 있다.
+- (법알못이라 자세히는 모릅니다...)
+
+---
+
+# 2. 이거 합법인가요? 
+
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/robots-txt.png" alt="" width="100">
+</div>
+
+- `<사이트주소>/robots.txt`
+- 크롤링 가능한 범위를 확인 가능.
+- 지키면 바람직한 권고안.
