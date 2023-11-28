@@ -93,7 +93,28 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 
 ---
 
-# 1. 매일경제 헤드라인 읽어오기
+# 0. 환경설정
+
+```shell
+# 가상 환경 만들기
+python -m venv venv
+
+source ./venv/bin/activate
+
+# vscode
+# - 파이썬 관련 익스텐션들 설치
+# - `ctrl(cmd) + shift + p` -> Python: Select Interpreter -> venv 설정
+
+# 패키지 설치
+pip install beautifulsoup4 selenium pandas
+
+# 패키지 정보 남기기
+pip freeze > requirements.txt
+```
+
+---
+
+# 1. 매일경제 헤드라인 & 상세페이지 읽어오기
 
 <div style="padding: 10px; margin: 20px 0">
     <img src="/images/mk-headline.png" alt="" width="500">
@@ -132,11 +153,19 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 
 # 원리
 
-todo...
 <div style="padding: 10px; margin: 20px 0">
     <img src="/images/python-control-chrome.png" alt="" width="500">
 </div>
 
+---
+
+# 0. 환경설정
+- 크롬 버전 확인하기
+- 크롬 버전에 해당하는 driver 다운로드 받아서 디렉토리(폴더)에 넣어주기
+
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/driver.png" alt="" width="300">
+</div>
 ---
 
 # 1. 매일경제 경제란 더보기 버튼
