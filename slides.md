@@ -93,7 +93,7 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 
 ---
 
-# 원리 
+# 원리
 
 <div style="padding: 10px; margin-top: 20px">
     <div style="display: flex; gap: 15px;">
@@ -148,6 +148,10 @@ pip freeze > requirements.txt
 
 # 요약
 
+- `urllib`을 이용해 서버로부터 응답을 받아온다.
+- `beautifulsoup4`를 이용해 받아온 응답을 파싱한다.
+- `soup.select` 등을 이용해 요소 선택 및 텍스트 추출.
+
 ---
 
 <div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
@@ -193,6 +197,11 @@ pip freeze > requirements.txt
 
 # 요약
 
+- web driver 설치 후 `selenium`을 이용해 test용 chrome을 띄운다.
+- `driver.find_element` 등의 함수를 이용해 요소를 선택 및 조작.
+- 중간중간 로딩에 걸리는 시간은 `time.sleep` 등으로 대응.
+- 무한스크롤 & 페이지네이션 신경쓰기.
+
 ---
 
 <div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
@@ -203,12 +212,26 @@ pip freeze > requirements.txt
 
 # 1. 그냥 데이터 직접 가져오면 안되나요?
 
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/python-dynamic.png" alt="" width="300">
+</div>
+
+- 자바스크립트에서 가져오는 **동적으로 가져오는 데이터**를 파이썬에서 가져오자!
+
 ---
 
 # 1. 그냥 데이터 직접 가져오면 안되나요?
 
-- User-Agent 정보를 확인하는 경우들은 종종 있다.
+- User-Agent 정보(브라우저에서 호출했는지, 파이썬에서 호출했는지)를 확인하는 경우들이 종종 있다.
 - 로그인해야 가져올 수 있는 정보는 힘들 수 있다.
+
+---
+
+# 1. 그냥 데이터 직접 가져오면 안되나요?
+
+<div style="padding: 10px; margin: 20px 0">
+    <img src="/images/yonsei-mileage.png" alt="" width="700">
+</div>
 
 ---
 
@@ -233,3 +256,9 @@ pip freeze > requirements.txt
 - `<사이트주소>/robots.txt`
 - 크롤링 가능한 범위를 확인 가능.
 - 지키면 바람직한 권고안.
+
+---
+
+<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
+    <h1 style="color: white; margin: auto">끝.</h1>
+</div>
