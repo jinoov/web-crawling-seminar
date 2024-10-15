@@ -21,14 +21,6 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 
 ---
 
-# 발표자 소개
-
-- 산업공학과 19학번 최진호
-- 스타트업, 외주, ... 잡부로 일하는 중
-- "웹이 미래다!"
-
----
-
 # Table Of Contents
 
 1. 웹 크롤링의 기본 개념
