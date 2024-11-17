@@ -45,15 +45,23 @@ fonts:
 
 # Table Of Contents
 
-1. 웹 크롤링의 기본 개념 🆙
+1. 웹 크롤링의 기본 개념
 2. 데이터를 정적으로 받아올 때
 3. 데이터를 동적으로 받아올 때
-4. Issues in Web Crawling 🆙
+4. Advanced Topics
 
 ---
 
 <div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #d7bde8; display: flex">
     <h1 style="color: white; margin: auto">1. 웹 크롤링의 기본 개념</h1>
+</div>
+
+---
+
+# 제2의 구글?
+
+<div style="padding: 10px; margin-top: 20px">
+    <img src="/images/how-to-make-google.png" alt="" width="350">
 </div>
 
 ---
@@ -247,7 +255,10 @@ pip freeze > requirements.txt
 ---
 
 <div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #d7bde8; display: flex">
-    <h1 style="color: white; margin: auto">4. Issues in Web Crawling</h1>
+    <div style="margin: auto">
+        <h1 style="color: white;">4. Advanced Topics</h1>
+        <p style="color: white; font-weight: 500; text-align: center;">여기서부턴 실습 없습니다 ☺️</p>
+    </div>
 </div>
 
 ---
@@ -329,7 +340,8 @@ pip freeze > requirements.txt
 </div>
 
 - `proxy server list` 등을 검색하면 무료/유료 프록시서버 리스트들이 나온다.
-- 프록시 서버 역시도 차단을 먹을 수 있기에 ^^; 여러개 돌려쓰는게 보통 권장된다.
+- 프록시 서버 역시도 차단을 먹을 수 있기에... 여러개 돌려쓰는게 보통 권장된다.
+- _덧. 대상 사이트의 html 구조가 바뀌면 크롤링 코드가 깨진다. 크롤링 서비스를 장기적으로 관리하기는 생각보다 쉽지 않다_.
 
 ---
 
@@ -338,7 +350,7 @@ pip freeze > requirements.txt
 1. 데이터 크롤링 ➡️ 데이터 전처리 ➡ ️AI 모델 돌리기
 2. 데이터 크롤링 + 공공 API ➡️ 데이터 전처리 ➡ ️AI 모델 돌리기
 3. 데이터 크롤링 ➡️ DB에 쌓기 ➡ 웹 서버 운영
-4. 기타 등등
+4. 스케줄링 서비스에 데이터 크롤링을 얹어서 주식 가격을 일정시간마다 긁어오고, 주식 가격이 일정 수치 이하로 내려가면 이메일을 보내준다든지.. 기타 등등!
 
 <div style="margin-top: 10px">
     <p style="color: #666;">크롤링 잘 익혀서 조별과제에서 사랑받는 팀원이 되자 👊</p>
