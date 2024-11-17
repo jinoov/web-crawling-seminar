@@ -1,7 +1,8 @@
 ---
 theme: seriph
+background: '/images/background.jpg'
 themeConfig:
-  primary: "#ff6f06"
+  primary: '#560c7b'
   fontWeight: 500
 class: text-center
 highlighter: shiki
@@ -9,15 +10,35 @@ lineNumbers: false
 drawings:
   persist: false
 transition: slide-left
-title: Git Basic Seminar
+title: Web Crawling 101
 mdc: true
 fonts:
-  sans: "Noto Sans KR"
-  local: "Noto Sans KR"
-image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
+  sans: 'Pretendard'
+  local: 'Pretendard'
 ---
 
 # Web Crawling 101
+
+2024-2 PoolC Seminar
+
+---
+
+# 세미나 소개
+
+- 세미나장: 산업공학과 19학번 최진호
+- 세미나 소요 시간: 2시간반 가량
+- 출석체크는 끝날 때 진행합니다.
+  - 중간에 나가게 된다면, 세미나장에게 꼭 말씀해주세요!
+- 질문은 언제든 환영입니다. 자유롭게 질문해주세요.
+
+---
+
+# 세미나 소개
+
+- **웹 크롤링**의 전반적인 내용을 다룹니다.
+  - 인터넷과 책에 충분히 많은 크롤링 관련 레퍼런스가 있습니다.
+  - 크롤링 코드마저도 AI가 너무 잘 짜주는 현실... 😢
+  - 해당 세미나에서는 **전반적인 흐름**과 **왜 이렇게 해야하는지**에 초점을 맞춥니다. 🔥
 
 ---
 
@@ -30,7 +51,7 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 
 ---
 
-<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
+<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #d7bde8; display: flex">
     <h1 style="color: white; margin: auto">1. 웹 크롤링의 기본 개념</h1>
 </div>
 
@@ -66,12 +87,12 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
     <img src="/images/client-server.png" alt="" width="500">
 </div>
 
-1. 데이터를 정적으로 받아오는가?  ➡️  BeautifulSoup
-2. 데이터를 동적으로 받아오는가?  ➡️  Selenium
+1. 데이터를 정적으로 받아오는가? ➡️ BeautifulSoup
+2. 데이터를 동적으로 받아오는가? ➡️ Selenium
 
 ---
 
-# Python이 마치 브라우저인 것처럼 행동하기 
+# Python이 마치 브라우저인 것처럼 행동하기
 
 <div style="padding: 10px; margin: 20px 0">
     <img src="/images/python-intercept.png" alt="" width="500">
@@ -79,7 +100,7 @@ image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
 
 ---
 
-<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
+<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #d7bde8; display: flex">
     <h1 style="color: white; margin: auto">2. 데이터를 정적으로 받아올 때</h1>
 </div>
 
@@ -146,7 +167,7 @@ pip freeze > requirements.txt
 
 ---
 
-<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
+<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #d7bde8; display: flex">
     <h1 style="color: white; margin: auto">3. 데이터를 동적으로 받아올 때</h1>
 </div>
 
@@ -161,10 +182,11 @@ pip freeze > requirements.txt
 ---
 
 # 0. 환경설정
+
 - 크롬 버전 확인하기
-    - [chrome://settings/help](chrome://settings/help)
+  - [chrome://settings/help](chrome://settings/help)
 - 크롬 버전에 해당하는 driver 다운로드 받아서 디렉토리(폴더)에 넣어주기
-    - [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
+  - [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
 
 <div style="padding: 10px; margin: 20px 0">
     <img src="/images/driver.png" alt="" width="300">
@@ -196,7 +218,7 @@ pip freeze > requirements.txt
 
 ---
 
-<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
+<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #d7bde8; display: flex">
     <h1 style="color: white; margin: auto">4. Issues in Web Crawling</h1>
 </div>
 
@@ -239,7 +261,7 @@ pip freeze > requirements.txt
 
 ---
 
-# 2. 이거 합법인가요? 
+# 2. 이거 합법인가요?
 
 <div style="padding: 10px; margin: 20px 0">
     <img src="/images/robots-txt.png" alt="" width="100">
@@ -251,6 +273,6 @@ pip freeze > requirements.txt
 
 ---
 
-<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffbc97; display: flex">
+<div style="position:fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #d7bde8; display: flex">
     <h1 style="color: white; margin: auto">끝.</h1>
 </div>
