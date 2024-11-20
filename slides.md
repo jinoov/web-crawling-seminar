@@ -161,6 +161,7 @@ fonts:
 ```shell
 # 가상 환경 만들기
 python -m venv venv
+# python3 -m venv venv
 
 source ./venv/bin/activate
 # window: .\venv\Scripts\activate
@@ -251,6 +252,7 @@ pip freeze > requirements.txt
 - `driver.find_element` 등의 함수를 이용해 요소를 선택 및 조작.
 - 중간중간 로딩에 걸리는 시간은 `time.sleep` 등으로 대응.
 - 무한스크롤 & 페이지네이션 신경쓰기.
+- 수많은 반례와 if와 try except의 떡칠... 화이팅!
 
 ---
 
